@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoPrint | Pretty, Paper-Saving PDFs</title>
+  <meta name="description" content="Turn messy web pages into clean, printable 2-up PDFs that save paper and ink." />
+  <style>
+    :root {
+      --bg: #f7f3eb;
+      --card: #fffdf8;
+      --ink: #1f2a2a;
+      --muted: #5e6a67;
+      --accent: #2f7d5a;
+      --accent-2: #1e5c44;
+      --line: #d8d1c2;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; font-family: "Avenir Next", "Segoe UI", sans-serif; color: var(--ink); background: radial-gradient(circle at 10% 10%, #fff8ea 0%, var(--bg) 48%, #efe7d8 100%); }
+    a { color: var(--accent-2); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
+    .hero { border: 1px solid var(--line); background: linear-gradient(165deg, #fffef9 0%, #f6f1e6 100%); border-radius: 18px; padding: 34px; box-shadow: 0 20px 50px rgba(50, 42, 20, 0.08); }
+    .tag { display: inline-block; font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent-2); background: #e7f3eb; border: 1px solid #bfdcc9; padding: 6px 10px; border-radius: 999px; }
+    h1 { margin: 14px 0 8px; font-size: clamp(30px, 5vw, 54px); line-height: 1.02; }
+    .sub { color: var(--muted); max-width: 780px; font-size: clamp(16px, 2vw, 20px); }
+    .cta { margin-top: 24px; display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { text-decoration: none; padding: 12px 16px; border-radius: 10px; border: 1px solid var(--line); font-weight: 600; transition: transform .18s ease, box-shadow .18s ease; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(0,0,0,.08); }
+    .btn.primary { background: var(--accent); color: #fff; border-color: var(--accent); }
+    .btn.secondary { background: var(--card); color: var(--ink); }
+    .stats { margin-top: 24px; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 12px; }
+    .stat { border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 12px; }
+    .stat .k { font-size: 26px; font-weight: 700; }
+    .stat .v { color: var(--muted); font-size: 13px; }
+    .section { margin-top: 34px; }
+    .section h2 { margin: 0 0 12px; font-size: 26px; }
+    .code { background: #182222; color: #ddf4e8; border-radius: 12px; padding: 14px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; overflow-x: auto; font-size: 13px; border: 1px solid #2a3b3b; }
+    .gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .gallery img { width: 100%; border-radius: 12px; border: 1px solid var(--line); background: #fff; }
+    footer { margin-top: 38px; color: var(--muted); font-size: 14px; }
+    @media (max-width: 900px) { .stats { grid-template-columns: 1fr; } .gallery { grid-template-columns: 1fr; } .hero { padding: 22px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <span class="tag">EcoPrint</span>
+      <h1>Make web pages printable, pretty, and paper-efficient.</h1>
+      <p class="sub">EcoPrint converts cluttered web pages into compact 2-up PDFs by removing print noise, fixing collapsed content, and optimizing layouts to reduce paper and ink waste.</p>
+      <div class="cta">
+        <a class="btn primary" href="https://github.com/sauravtom/ecoprint">View on GitHub</a>
+        <a class="btn secondary" href="https://a16z.com/100-gen-ai-apps-6/" target="_blank" rel="noreferrer">Sample URL</a>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="k">25 -> 12</div><div class="v">print pages (sample URL)</div></div>
+        <div class="stat"><div class="k">13 -> 6</div><div class="v">physical sheets in 2-up mode</div></div>
+        <div class="stat"><div class="k">~54%</div><div class="v">sheet reduction in this run</div></div>
+      </div>
+    </section>
+    <section class="section">
+      <h2>Quick start</h2>
+      <pre class="code">git clone https://github.com/sauravtom/ecoprint.git
+cd ecoprint
+npm install
+npm run pdf -- "https://a16z.com/100-gen-ai-apps-6/"</pre>
+    </section>
+    <section class="section">
+      <h2>Before vs after</h2>
+      <div class="gallery">
+        <img src="../assets/before-v1.png" alt="Before screenshot 1" />
+        <img src="../assets/before-v2.png" alt="Before screenshot 2" />
+        <img src="../assets/before-v3.png" alt="Before screenshot 3" />
+        <img src="../assets/after-ecoprint.png" alt="After screenshot" />
+      </div>
+    </section>
+    <footer>Built for practical sustainability: fewer pages, less toner, cleaner archives.</footer>
+  </div>
+</body>
+</html>
