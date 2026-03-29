@@ -37,15 +37,15 @@ The screenshots below are from the actual iterations used to build this workflow
 
 ### Before (wasted space)
 
-![Before v1](assets/before-v1.png)
+![Before v1](https://raw.githubusercontent.com/sauravtom/ecoprint/main/assets/before-v1.png)
 
-![Before v2](assets/before-v2.png)
+![Before v2](https://raw.githubusercontent.com/sauravtom/ecoprint/main/assets/before-v2.png)
 
-![Before v3](assets/before-v3.png)
+![Before v3](https://raw.githubusercontent.com/sauravtom/ecoprint/main/assets/before-v3.png)
 
 ### After (EcoPrint output preview)
 
-![After EcoPrint](assets/after-ecoprint.png)
+![After EcoPrint](https://raw.githubusercontent.com/sauravtom/ecoprint/main/assets/after-ecoprint.png)
 
 ## How it works
 
