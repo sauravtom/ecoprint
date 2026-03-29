@@ -1,0 +1,26 @@
+{
+  "name": "ecoprint",
+  "version": "1.0.0",
+  "description": "Turn noisy web pages into paper-saving, print-ready 2-up PDFs.",
+  "type": "commonjs",
+  "bin": {
+    "ecoprint": "./ecoprint.js"
+  },
+  "scripts": {
+    "pdf": "node ecoprint.js",
+    "sample": "node ecoprint.js \"https://a16z.com/100-gen-ai-apps-6/\" --outdir ./examples/output --keep-source"
+  },
+  "keywords": [
+    "pdf",
+    "print",
+    "paper-saving",
+    "automation",
+    "playwright"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "playwright-core": "^1.56.1"
+  }
+}
